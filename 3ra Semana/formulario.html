@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="formulario">
+<head>	
+	<title>Desarrollando En AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+	<link rel="stylesheet" type="text/css" href="css/lumx.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+	<script src="js/lumx.js"></script>
+	<script src="js/formulario.js"></script>
+</head>
+<body>
+
+<div class="card bgc-blue-300 tc-white">
+    <div class="toolbar">
+        <div class="toolbar__left mr+++">
+            <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                <i class="mdi mdi-menu"></i>
+            </button>
+        </div>
+
+        <span class="toolbar__label fs-title">Angular JS + Lumx</span>
+
+        <div class="toolbar__right">
+            <lx-search-filter closed theme="light"></lx-search-filter>
+
+            <lx-dropdown position="right" from-top>
+                <button class="btn btn--l btn--black btn--icon" lx-ripple lx-dropdown-toggle>
+                    <i class="mdi mdi-dots-vertical"></i>
+                </button>
+
+                <lx-dropdown-menu>
+                    <ul>
+                        <li><a href="index.html" class="dropdown-link">Maquetar</a></li>
+                        <li><a href="formulario.html" class="dropdown-link">Formulario</a></li>
+                        <li><a href="peticion.html" class="dropdown-link">Peticion JSON</a></li>
+                    </ul>
+                </lx-dropdown-menu>
+            </lx-dropdown>
+        </div>
+    </div>
+</div>
+
+<div class="tc-black-1 mt++" flex-container="column" flex-align="space-between center" style="height: 200px">
+    <div>
+    <div class="tc-black-1 p+">
+
+	<div flex-container="row" flex-gutter="24">
+	    <div flex-item>
+            <lx-text-field label="Ingrese su nombre" fixed-label="true" icon="account">
+                <input type="text" ng-model="textFields.fixedFirstName">
+            </lx-text-field>
+	    </div>
+
+	    <div flex-item>
+            <lx-text-field label="Ingrese su telefono" fixed-label="true" icon="phone">
+                <input type="text" ng-model="textFields.fixedLastName">
+            </lx-text-field>
+	    </div>
+	</div>
+
+</div>
+
+<div flex-container="row">
+    <div flex-item>
+        <lx-text-field label="Escriba una Descripcion">
+            <textarea ng-model="textFields.description"></textarea>
+        </lx-text-field>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="tc-black-1 mt++" flex-container="column" flex-align="space-between center" style="height: 200px">
+    <div>
+			<div class="p+">
+				<div class="card top-space" >
+					<div class="p+">
+						<strong class="fs-headline display-block tc-red-900">Nombre : Jorge Luis Limo</strong>
+						<div class="paragraph fs-body-1 mt+">
+							Telefono : 991649453
+						</div><br>
+						<div class="card__actions">
+							Descripcion : Aprendiendo angular js con lumx
+						</div>
+					</div>
+				</div>
+			</div>
+</div></div>
+			
+</body>
+</html>
